@@ -12,3 +12,6 @@ alias v='nvim'
 
 alias frickin='sudo apt'
 alias fricking='sudo apt-get'
+
+alias swap-esctocaps="setxkbmap -option \"caps:swapescape\""
+alias swapesc-reset="setxkbmap -option \"\""
