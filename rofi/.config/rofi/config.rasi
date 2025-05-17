@@ -2,7 +2,7 @@ configuration{
     modi: "run,combi,drun";
     icon-theme: "Papirus";
     show-icons: true;
-    terminal: "wezterm";
+    terminal: "flatpak run org.wezfurlong.wezterm";
     drun-display-format: "{icon} {name}";
     location: 0;
     disable-history: false;
