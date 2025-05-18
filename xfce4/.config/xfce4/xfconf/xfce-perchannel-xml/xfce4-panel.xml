@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="empty"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=6;x=960;y=17"/>
+      <property name="length" type="double" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="28"/>
+      <property name="background-style" type="uint" value="0"/>
+      <property name="background-alpha" type="empty"/>
+      <property name="enter-opacity" type="uint" value="100"/>
+      <property name="leave-opacity" type="uint" value="100"/>
+      <property name="icon-size" type="uint" value="21"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="16"/>
+        <value type="int" value="19"/>
+        <value type="int" value="18"/>
+        <value type="int" value="21"/>
+        <value type="int" value="6"/>
+        <value type="int" value="27"/>
+        <value type="int" value="23"/>
+        <value type="int" value="25"/>
+        <value type="int" value="8"/>
+        <value type="int" value="10"/>
+        <value type="int" value="12"/>
+        <value type="int" value="26"/>
+        <value type="int" value="13"/>
+        <value type="int" value="1"/>
+      </property>
+      <property name="mode" type="uint" value="0"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0"/>
+        <value type="double" value="0"/>
+        <value type="double" value="0"/>
+        <value type="double" value="1"/>
+      </property>
+    </property>
+    <property name="dark-mode" type="bool" value="false"/>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-1" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-2" type="empty"/>
+    <property name="plugin-3" type="empty">
+      <property name="items" type="empty"/>
+    </property>
+    <property name="plugin-4" type="empty">
+      <property name="items" type="empty"/>
+    </property>
+    <property name="plugin-5" type="empty">
+      <property name="items" type="empty"/>
+    </property>
+    <property name="plugin-6" type="empty">
+      <property name="show-handle" type="bool" value="false"/>
+      <property name="middle-click" type="empty"/>
+      <property name="show-labels" type="bool" value="false"/>
+      <property name="flat-buttons" type="bool" value="true"/>
+      <property name="show-tooltips" type="bool" value="false"/>
+      <property name="sort-order" type="uint" value="2"/>
+      <property name="show-only-minimized" type="bool" value="false"/>
+      <property name="include-all-monitors" type="bool" value="true"/>
+    </property>
+    <property name="plugin-7" type="empty">
+      <property name="expand" type="empty"/>
+      <property name="style" type="empty"/>
+    </property>
+    <property name="plugin-8" type="empty">
+      <property name="icon-size" type="int" value="18"/>
+      <property name="names-visible" type="empty"/>
+      <property name="show-frame" type="empty"/>
+      <property name="known-items" type="array">
+        <value type="string" value="blueman"/>
+      </property>
+      <property name="hidden-items" type="array">
+      </property>
+      <property name="square-icons" type="bool" value="true"/>
+      <property name="symbolic-icons" type="bool" value="false"/>
+    </property>
+    <property name="plugin-9" type="empty"/>
+    <property name="plugin-10" type="empty"/>
+    <property name="plugin-11" type="empty"/>
+    <property name="plugin-12" type="empty">
+      <property name="enable-keyboard-shortcuts" type="empty"/>
+      <property name="enable-mpris" type="empty"/>
+      <property name="mixer-command" type="empty"/>
+      <property name="show-notifications" type="empty"/>
+      <property name="known-players" type="string" value="Brave;firefox"/>
+    </property>
+    <property name="plugin-13" type="empty">
+      <property name="digital-time-format" type="string" value="%_H:%M"/>
+      <property name="digital-layout" type="empty"/>
+      <property name="digital-date-font" type="string" value="JetBrainsMono Nerd Font Bold 8"/>
+      <property name="digital-time-font" type="string" value="JetBrainsMonoNL Nerd Font Mono Bold 8"/>
+      <property name="mode" type="uint" value="2"/>
+      <property name="timezone" type="string" value="US/Alaska"/>
+      <property name="tooltip-format" type="string" value="%x"/>
+      <property name="digital-date-format" type="string" value="%m/%d/%Y"/>
+    </property>
+    <property name="plugin-14" type="empty"/>
+    <property name="plugin-16" type="string" value="whiskermenu">
+      <property name="favorites" type="array">
+      </property>
+      <property name="button-icon" type="string" value="linuxmint-logo-badge"/>
+      <property name="position-categories-horizontal" type="bool" value="true"/>
+      <property name="button-title" type="string" value="Menu"/>
+      <property name="show-button-icon" type="bool" value="true"/>
+      <property name="show-button-title" type="bool" value="false"/>
+      <property name="button-single-row" type="bool" value="false"/>
+      <property name="view-mode" type="int" value="0"/>
+      <property name="menu-opacity" type="int" value="95"/>
+      <property name="menu-width" type="int" value="500"/>
+      <property name="recent" type="array">
+        <value type="string" value="xfce-settings-manager.desktop"/>
+        <value type="string" value="xfce4-mime-settings.desktop"/>
+        <value type="string" value="xfce-keyboard-settings.desktop"/>
+        <value type="string" value="xfce-session-settings.desktop"/>
+        <value type="string" value="org.wezfurlong.wezterm.desktop"/>
+        <value type="string" value="btop.desktop"/>
+        <value type="string" value="xfce4-terminal.desktop"/>
+        <value type="string" value="brave-browser.desktop"/>
+        <value type="string" value="xfce-wm-settings.desktop"/>
+        <value type="string" value="thunar.desktop"/>
+      </property>
+      <property name="category-show-name" type="bool" value="false"/>
+      <property name="launcher-show-tooltip" type="bool" value="false"/>
+      <property name="position-categories-alternate" type="bool" value="true"/>
+      <property name="position-search-alternate" type="bool" value="false"/>
+      <property name="position-profile-alternate" type="bool" value="false"/>
+      <property name="default-category" type="int" value="1"/>
+      <property name="favorites-in-recent" type="bool" value="true"/>
+    </property>
+    <property name="plugin-18" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+      <property name="miniature-view" type="bool" value="false"/>
+      <property name="numbering" type="bool" value="false"/>
+      <property name="workspace-scrolling" type="bool" value="false"/>
+    </property>
+    <property name="plugin-19" type="string" value="separator">
+      <property name="expand" type="bool" value="false"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-21" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-23" type="string" value="systemload">
+      <property name="system-monitor-command" type="string" value="btop"/>
+      <property name="cpu" type="empty">
+        <property name="enabled" type="bool" value="true"/>
+      </property>
+      <property name="uptime" type="empty">
+        <property name="enabled" type="bool" value="true"/>
+      </property>
+      <property name="network" type="empty">
+        <property name="enabled" type="bool" value="true"/>
+      </property>
+    </property>
+    <property name="plugin-25" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-26" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-27" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+  </property>
+</channel>

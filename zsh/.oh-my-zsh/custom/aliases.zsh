@@ -3,6 +3,8 @@
 alias zshconfig='nvim ~/.zshrc'
 alias aliasconfig='nvim $ZSH_CUSTOM/aliases.zsh'
 
+alias mkdirp='mkdir -p'
+
 alias c='clear'
 alias rebterm='zsh && exit'
 
