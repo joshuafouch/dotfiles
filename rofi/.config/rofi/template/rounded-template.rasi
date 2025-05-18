@@ -1,5 +1,5 @@
-/* ROUNDED THEME FOR ROFI */
 /* Author: Newman Sanchez (https://github.com/newmanls) */
+/* Custom Config: Joshua Fouch (https://github.com/joshuafouch) */
 
 * {
     font:   "JetBrainsMono Nerd Font 12";
@@ -62,7 +62,7 @@ textbox {
 listview {
     background-color:   transparent;
 
-    margin:     12px 0 0;
+    margin:     12px 0px 12px;
     lines:      8;
     columns:    1;
 
