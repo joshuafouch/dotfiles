@@ -6,7 +6,6 @@ alias aliasconfig='nvim $ZSH_CUSTOM/aliases.zsh'
 alias c='clear'
 alias rebterm='zsh && exit'
 
-alias cd='z'
 alias ls='exa'
 alias l='exa -lah'
 alias sl='exa'
