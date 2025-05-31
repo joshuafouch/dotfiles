@@ -57,7 +57,7 @@ bindkey '^n' history-search-forward
 
 # history
 HISTSIZE=10000
-HISTFILE=~/.config/zsh/.zsh_history
+HISTFILE=~/.cache/zsh/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
 setopt appendhistory
@@ -77,6 +77,9 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # source aliases
 source $ZDOTDIR/.aliases.zsh
+
+# export PATH env var for zoxide
+export PATH="$HOME/.local/bin:$PATH"
 
 # shell integrations
 eval "$(fzf --zsh)"

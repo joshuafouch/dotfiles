@@ -1,6 +1,6 @@
 # my custom aliases
 
-alias cd='z'	# dependent on zoxide tool
+#alias cd='z'	# dependent on zoxide tool
 
 alias zshconf='nvim $ZDOTDIR/.zshrc'
 alias aliasconf='nvim $ZDOTDIR/.aliases.zsh'
@@ -23,3 +23,5 @@ alias swapesc-reset="setxkbmap -option \"\""
 alias sudopush='xclip -sel c < ~/Documents/.gittoken.txt && git push'	# dependent on xlip tool
 alias sudopull='xclip -sel c < ~/Documents/.gittoken.txt && git pull'
 alias sudoclone='xclip -sel c < ~/Documents/.gittoken.txt && git clone'
+
+alias poke='pokemon-colorscripts'	# dependent on pokemon-colorscripts
