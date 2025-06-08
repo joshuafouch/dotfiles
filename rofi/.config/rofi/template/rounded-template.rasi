@@ -2,7 +2,7 @@
 /* Custom Config: Joshua Fouch (https://github.com/joshuafouch) */
 
 * {
-    font:   "JetBrainsMono Nerd Font 12";
+    font:   "BlexMono Nerd Font 14";
 
     background-color:   transparent;
     text-color:         @fg0;
