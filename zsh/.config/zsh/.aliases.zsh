@@ -10,6 +10,7 @@ alias mkdir='mkdir -p'
 alias c='clear'
 alias zsh='zsh && exit'
 
+
 alias ls='exa'	# dependent on eza tool
 alias l='exa -lah'
 alias sl='exa'
@@ -24,5 +25,6 @@ alias sudopush='xclip -sel c < ~/Documents/.gittoken.txt && git push'	# dependen
 alias sudopull='xclip -sel c < ~/Documents/.gittoken.txt && git pull'
 alias sudoclone='xclip -sel c < ~/Documents/.gittoken.txt && git clone'
 alias token='xclip -sel c < ~/Documents/.gittoken.txt' 
+alias lg='lazygit'
 
 alias poke='pokemon-colorscripts'	# dependent on pokemon-colorscripts
