@@ -4,6 +4,7 @@ return {
     dependencies = {
       'williamboman/mason-lspconfig.nvim',
       'neovim/nvim-lspconfig',
+      'saghen/blink.cmp',
     },
     opts = {
       servers = {
@@ -28,12 +29,14 @@ return {
         rust_analyzer = {},
         ts_ls = {},
         eslint = {},
+        svelte = {},
+        tailwindcss = {},
       },
     },
     config = function(_, opts)
       require('mason').setup()
       require('mason-lspconfig').setup {
-        ensure_installed = { 'lua_ls', 'eslint', 'ts_ls' },
+        ensure_installed = vim.tbl_keys(opts.servers),
       }
 
       -- loop through all servers list

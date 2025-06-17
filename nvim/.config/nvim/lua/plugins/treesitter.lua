@@ -33,6 +33,7 @@ return {
       'html',
       'elixir',
       'rust',
+      'svelte',
     },
     -- Autoinstall languages that are not installed
     auto_install = true,
