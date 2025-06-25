@@ -1,16 +1,11 @@
-configuration{
-    modi: "run,combi,drun";
-    icon-theme: "Papirus";
-    show-icons: true;
-    terminal: "flatpak run org.wezfurlong.wezterm";
-    drun-display-format: "{icon} {name}";
-    location: 0;
-    disable-history: false;
-    hide-scrollbar: true;
-    display-combi: " 🖥️  All ";
-    display-run: " 🏃  Run ";
-    display-drun: " ⚙️ Apps ";
-    sidebar-mode: true;
+configuration {
+  display-drun: "Apps:";
+  display-windows:  "Windows:";
+  drun-display-format: "{icon} {name}";
+  font: "BlexMono Nerd Font 14";
+  modi: "window,run,drun";
+  show-icons: true;
+  icon-theme: "Papirus";
 }
 
-@theme "minty-brain"
+@theme "squared-theme.rasi"
