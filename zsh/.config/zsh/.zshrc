@@ -43,7 +43,7 @@ zinit snippet OMZP::kubectx
 zinit snippet OMZP::command-not-found
 
 # load completions
-autoload -U compinit && compinit
+autoload -U compinit && compinit -C -d ~/.cache/zsh/.zcompdump
 
 zinit cdreplay -q
 
