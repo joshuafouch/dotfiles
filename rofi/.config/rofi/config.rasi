@@ -8,4 +8,4 @@ configuration {
   icon-theme: "Papirus";
 }
 
-@theme "squared-theme.rasi"
+@theme "nordbruh.rasi"
