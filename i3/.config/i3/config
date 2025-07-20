@@ -85,6 +85,9 @@ bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 # ~/.config/rofi/scripts/powermenu
 bindsym $mod+0 exec --no-startup-id "rofi -show power-menu -modi power-menu:$HOME/.config/rofi/scripts/power-menu"
 
+# start flameshot for screenshotting
+bindsym $mod+c exec --no-startup-id "flameshot gui"
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down 
