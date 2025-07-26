@@ -33,7 +33,7 @@ bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set -5%
 
 # Launch XFCE configuration daemons
-exec --no-startup-id xfconfd
+#exec --no-startup-id xfconfd
 exec --no-startup-id xfsettingsd --sm-client-disable
 exec_always --no-startup-id xfce4-volumed-pulse
 exec --no-startup-id xfce4-notifyd
