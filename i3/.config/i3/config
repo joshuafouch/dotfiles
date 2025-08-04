@@ -26,27 +26,32 @@ set $bash exec --no-startup-id bash -c
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
+#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%
+#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume up
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volume down
+bindsym XF86AudioMute exec --no-startup-id ~/.config/i3/scripts/volume mute
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # adjust screen brightness (for laptops)
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%; $bash "notify-send $(brightnessctl g)"
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-; $bash "notify-send $(brightnessctl g)"
+#bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%; $bash "notify-send $(brightnessctl g)"
+#bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-; $bash "notify-send $(brightnessctl g)"
+bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/brightness up
+bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/brightness down
 
 
 # Launch XFCE configuration daemons
 #exec --no-startup-id xfconfd
 exec --no-startup-id xfsettingsd --sm-client-disable
-exec_always --no-startup-id xfce4-volumed-pulse
-exec --no-startup-id xfce4-notifyd
+#exec_always --no-startup-id xfce4-volumed-pulse
+#exec --no-startup-id xfce4-notifyd
 
 # starting polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # loading wallpaper
-exec_always --no-startup-id feh --bg-fill $HOME/.config/backgrounds/spencer-glacier.png
+exec_always --no-startup-id feh --bg-fill $HOME/.config/backgrounds/city-rain.png
 #exec_always --no-startup-id feh --bg-scale $HOME/.config/backgrounds/japanfish.png
 
 
@@ -208,6 +213,22 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
+# start applications in different workspaces
+# bind program to workspace and focus to them on startup:
+assign [class="kitty"] $ws1
+assign [class="(?i)zen"] $ws2
+assign [class="Thunar"] $ws3
+assign [class="obsidian"] $ws4
+assign [class="Cider"] $ws5
+
+# automatic set focus new window if it opens on another workspace than the current:
+for_window [class=kitty] focus
+for_window [class=(?i)zen] focus
+for_window [class=Thunar] focus
+for_window [class=obsidian] focus
+for_window [class=Cider] focus
+
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -216,10 +237,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym h resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 40 px or 40 ppt
+        bindsym j resize grow height 40 px or 40 ppt
+        bindsym k resize shrink height 30 px or 40 ppt
+        bindsym l resize grow width 40 px or 40 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
