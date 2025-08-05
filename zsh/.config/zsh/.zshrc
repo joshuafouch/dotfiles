@@ -81,6 +81,10 @@ source $ZDOTDIR/.aliases.zsh
 # export PATH env var for zoxide
 export PATH="$HOME/.local/bin:$PATH"
 
+# env var for neovim
+export EDITOR=nvim
+export VISUAL=nvim
+
 # shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
