@@ -227,7 +227,7 @@ for_window [class=(?i)zen] focus
 for_window [class=Thunar] focus
 for_window [class=obsidian] focus
 for_window [class=Cider] focus
-
+for_window [class="pavucontrol"] floating enable, move position mouse, move down 30, move left 30, sticky enable
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
