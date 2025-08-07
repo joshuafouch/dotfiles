@@ -82,13 +82,13 @@ tiling_drag modifier titlebar
 ###################################################  [bindsym]  ################################################################
 
 # start my browser of choice
-bindsym $mod+w exec zen-browser
+bindsym $mod+z exec zen-browser
 
 # start a terminal
 bindsym $mod+Return exec kitty
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # start rofi program launcher menu
 bindsym $mod+space exec --no-startup-id "rofi -show drun"
@@ -242,7 +242,6 @@ for_window [class=(?i)zen] focus
 for_window [class=Thunar] focus
 for_window [class=obsidian] focus
 for_window [class=Cider] focus
-for_window [class="pavucontrol"] floating enable, move position mouse, move down 30, move left 30, sticky enable
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
