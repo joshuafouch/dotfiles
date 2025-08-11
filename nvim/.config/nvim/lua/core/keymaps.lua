@@ -77,7 +77,7 @@ vim.api.nvim_create_autocmd('LspAttach', { --  Use LspAttach autocommand to only
 
     -- Buffer local mappings.
     -- See `:help vim.lsp.*` for documentation on any of the below functions
-    local opts = { buffer = ev.buf }
+    opts = { buffer = ev.buf }
     vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
     vim.keymap.set('n', '<leader><space>', vim.lsp.buf.hover, opts)
     vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
@@ -98,3 +98,7 @@ vim.api.nvim_create_autocmd('LspAttach', { --  Use LspAttach autocommand to only
     end, opts)
   end,
 })
+
+-- open oil
+vim.keymap.set('n', '<leader>o', '<CMD>Oil<CR>', opts)
+vim.keymap.set('n', '<leader>e', '<CMD>Oil --float .<CR>', opts)

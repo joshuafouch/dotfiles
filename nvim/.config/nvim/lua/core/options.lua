@@ -1,8 +1,9 @@
 -- My vim options setups
 
 vim.wo.number = true -- Line numbers
+--vim.o.winborder = 'rounded'
 vim.wo.relativenumber = true -- Relative line numbers for jumping
-vim.o.clipboard = 'unnamedplus' -- Clipboard syncing between os and vim
+vim.o.clipboard = 'unnamedplus' -- Clipboard syncing between os and vim, dependency: xclip
 vim.o.wrap = false -- Display lines as one long line (default: true)
 vim.o.linebreak = true -- Companion to wrap, don't split words (default: false)
 vim.o.mouse = '' -- Enable mouse mode (default: '')
