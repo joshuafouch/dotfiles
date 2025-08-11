@@ -8,7 +8,6 @@ alias aliasconf='nvim $ZDOTDIR/.aliases.zsh'
 
 alias mkdir='mkdir -p'
 
-alias c='clear'
 alias zsh='zsh && exit'
 
 alias ls='exa'	# dependent on eza tool
