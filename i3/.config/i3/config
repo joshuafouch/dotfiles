@@ -52,7 +52,7 @@ exec --no-startup-id xfsettingsd --sm-client-disable
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # loading wallpaper
-exec_always --no-startup-id feh --bg-fill $HOME/.config/backgrounds/auroranord.png
+exec_always --no-startup-id feh --bg-fill $HOME/.config/backgrounds/minimal-nord.png
 #exec_always --no-startup-id feh --bg-scale $HOME/.config/backgrounds/japanfish.png
 
 

@@ -21,6 +21,7 @@ alias swap-esctocaps="setxkbmap -option \"caps:swapescape\""
 alias swapesc-reset="setxkbmap -option \"\""
 
 alias lg='lazygit'
+alias ff='fastfetch'
 
 alias poke='pokemon-colorscripts'	# dependent on pokemon-colorscripts
 
