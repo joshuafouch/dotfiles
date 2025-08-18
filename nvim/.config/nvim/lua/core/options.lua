@@ -1,7 +1,11 @@
 -- My vim options setups
 
+vim.o.shiftwidth = 2 -- The number of spaces inserted for each indentation (default: 8)
+vim.o.tabstop = 2 -- Insert n spaces for a tab (default: 8)
+vim.o.softtabstop = 2 -- Number of spaces that a tab counts for while performing editing operations (default: 0)
+vim.o.expandtab = true -- Convert tabs to spaces (default: false)
+
 vim.wo.number = true -- Line numbers
---vim.o.winborder = 'rounded'
 vim.wo.relativenumber = true -- Relative line numbers for jumping
 vim.o.clipboard = 'unnamedplus' -- Clipboard syncing between os and vim, dependency: xclip
 vim.o.wrap = false -- Display lines as one long line (default: true)
@@ -10,10 +14,6 @@ vim.o.mouse = '' -- Enable mouse mode (default: '')
 vim.o.autoindent = true -- Copy indent from current line when starting new one (default: true)
 vim.o.ignorecase = true -- Case-insensitive searching UNLESS \C or capital in search (default: false)
 vim.o.smartcase = true -- Smart case (default: false)
-vim.o.shiftwidth = 2 -- The number of spaces inserted for each indentation (default: 8)
-vim.o.tabstop = 2 -- Insert n spaces for a tab (default: 8)
-vim.o.softtabstop = 2 -- Number of spaces that a tab counts for while performing editing operations (default: 0)
-vim.o.expandtab = true -- Convert tabs to spaces (default: false)
 vim.o.scrolloff = 4 -- Minimal number of screen lines to keep above and below the cursor (default: 0)
 vim.o.sidescrolloff = 8 -- Minimal number of screen columns either side of cursor if wrap is `false` (default: 0)
 vim.o.cursorline = false -- Highlight the current line (default: false)
