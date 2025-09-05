@@ -16,6 +16,7 @@ alias sl='exa'
 alias cat='bat'	# dependent on bat tool
 alias v='nvim'	# dependent on neovim
 alias vim='nvim'  # dependent on neovim
+alias open='xdg-open'
 
 alias swap-esctocaps="setxkbmap -option \"caps:swapescape\""
 alias swapesc-reset="setxkbmap -option \"\""
