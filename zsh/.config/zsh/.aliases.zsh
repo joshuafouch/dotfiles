@@ -10,9 +10,8 @@ alias mkdir='mkdir -p'
 
 alias zsh='zsh && exit'
 
-alias ls='exa'	# dependent on eza tool
 alias l='exa -lah'
-alias sl='exa'
+alias sl='cmatrix'
 alias cat='bat'	# dependent on bat tool
 alias v='nvim'	# dependent on neovim
 alias vim='nvim'  # dependent on neovim
@@ -22,7 +21,17 @@ alias swap-esctocaps="setxkbmap -option \"caps:swapescape\""
 alias swapesc-reset="setxkbmap -option \"\""
 
 alias lg='lazygit'
-alias ff='fastfetch'
+
+alias ls='eza -lh --group-directories-first --icons=auto'
+alias lsa='ls -a'
+alias lt='eza --tree --level=2 --long --icons --git'
+alias lta='lt -a'
+alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+
+# Directories
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
 alias poke='pokemon-colorscripts'	# dependent on pokemon-colorscripts
 
