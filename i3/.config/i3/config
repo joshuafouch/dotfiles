@@ -52,7 +52,7 @@ exec --no-startup-id xfsettingsd --sm-client-disable
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # loading wallpaper
-exec_always --no-startup-id feh --bg-fill $HOME/.config/backgrounds/minimal-nord.png
+exec_always --no-startup-id feh --bg-fill $HOME/.config/backgrounds/auroranord.png
 #exec_always --no-startup-id feh --bg-scale $HOME/.config/backgrounds/japanfish.png
 
 
@@ -81,7 +81,7 @@ tiling_drag modifier titlebar
 ###################################################  [bindsym]  ################################################################
 
 # start my browser of choice
-bindsym $mod+z exec zen-browser
+bindsym $mod+b exec zen-browser
 
 # start a terminal
 bindsym $mod+Return exec kitty
@@ -97,7 +97,7 @@ bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # start rofi powermenu
 # ~/.config/rofi/scripts/powermenu
-bindsym $mod+backslash exec --no-startup-id "rofi -show power-menu -modi power-menu:$HOME/.config/rofi/scripts/power-menu"
+bindsym $mod+Escape exec --no-startup-id "rofi -show power-menu -modi power-menu:$HOME/.config/rofi/scripts/power-menu"
 
 # start flameshot for screenshotting
 bindsym $mod+c exec --no-startup-id "flameshot gui"
