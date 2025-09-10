@@ -31,6 +31,13 @@ return {
         eslint = {},
         svelte = {},
         tailwindcss = {},
+        tinymist = {
+          settings = {
+            formatterMode = 'typstyle',
+            exportPdf = 'onType',
+            semanticTokens = 'disable',
+          },
+        },
       },
     },
     config = function(_, opts)
