@@ -36,3 +36,5 @@ set recolor-lightcolor          "#2E3440"
 set recolor-darkcolor           "#ECEFF4"
 set recolor                     "true"
 set font                        "BlexMono Nerd Font 12"
+
+set selection-clipboard         clipboard
