@@ -1,8 +1,4 @@
-# font stuff
-#
-
 theme = nord
-custom-shader = shaders/cursor_smear.glsl
 
 # main
 font-family = "Fira Code"
