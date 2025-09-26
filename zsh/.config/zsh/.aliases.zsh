@@ -38,3 +38,5 @@ alias poke='pokemon-colorscripts'	# dependent on pokemon-colorscripts
 alias pacman-hist="awk '/installed/ { gsub(/^\[/, \"\", \$1); split(\$1, a, \"T\"); print a[1], \$4, \$5; }' /var/log/pacman.log"
 
 alias say='./sam'
+
+alias Trust='kjv Psalm 23' # dependent on kjv-apocrypha
