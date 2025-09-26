@@ -1,8 +1,8 @@
 theme = nord
 
 # main
-font-family = "Fira Code"
-font-size = 16.0
+font-family = "Fira Code Bold"
+font-size = 14.0
 window-decoration = server
 window-padding-x = 2
 window-padding-y = 2
