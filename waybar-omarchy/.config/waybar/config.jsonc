@@ -66,8 +66,8 @@
     "on-click": "$TERMINAL -e btop"
   },
   "clock": {
-    "format": "<span font='10'>{:L%A, %d/%m/%y, %H:%M}</span>",
-    "format-alt": "",
+    "format": "<span font='10'>{:L%A, %d %B, %I:%M %p}</span>",
+    "format-alt": "Κύριε Ἰησοῦ Χριστέ, Υἱὲ τοῦ Θεοῦ, ἐλέησόν με τὸν ἁμαρτωλόν",
     "tooltip": false,
     "on-click-right": "omarchy-cmd-tzupdate"
   },
