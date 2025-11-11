@@ -102,3 +102,6 @@ vim.api.nvim_create_autocmd('LspAttach', { --  Use LspAttach autocommand to only
 -- open oil
 vim.keymap.set('n', '<leader>o', '<CMD>Oil<CR>', opts)
 vim.keymap.set('n', '<leader>e', '<CMD>Oil --float .<CR>', opts)
+
+-- open typst preview
+vim.keymap.set('n', '<leader>tp', '<CMD>TypstPreview<CR>', opts)
