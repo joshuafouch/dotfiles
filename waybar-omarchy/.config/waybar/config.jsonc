@@ -4,7 +4,7 @@
   "position": "top",
   "spacing": 0,
   "height": 26,
-  "modules-left": ["custom/omarchy", "hyprland/workspaces", "hyprland/window"],
+  "modules-left": ["custom/omarchy", "hyprland/workspaces"],
   "modules-center": ["clock", "custom/update", "custom/screenrecording-indicator",],
   "modules-right": [
     "group/tray-expander",
@@ -28,7 +28,7 @@
       "7": "7",
       "8": "8",
       "9": "9",
-      "10": "10",
+      "10": "0",
       "active": "󱓻"
     },
     "persistent-workspaces": {
@@ -40,7 +40,8 @@
       "6": [],
       "7": [],
       "8": [],
-      "9": []
+      "9": [],
+      "10": []
     }
   },
   "custom/omarchy": {
@@ -57,10 +58,10 @@
     "signal": 7,
     "interval": 3600
   },
-  "hyprland/window": {  
-  //"format": "{}"   // <--- these is the default value  
-  "format": " <span font='10' rise='-4444'>{}</span> "  
-  },
+  //"hyprland/window": {  
+  ////"format": "{}"   // <--- these is the default value  
+  //"format": " <span font='10' rise='-4444'>{}</span> "  
+  //},
   "cpu": {
     "interval": 5,
     "format": "󰍛",
