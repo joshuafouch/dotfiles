@@ -8,7 +8,18 @@ return {
     },
     opts = {
       servers = {
-        -- add pre-installed lsps here:
+        -- add more servers here
+        basedpyright = {
+          settings = {
+            basedpyright = {
+              analysis = {
+                typeCheckingMode = 'basic', -- "off" to disable all red squiggles, "basic" for standard checks
+                autoSearchPaths = true,
+                useLibraryCodeForTypes = true,
+              },
+            },
+          },
+        },
         lua_ls = {
           settings = {
             Lua = {

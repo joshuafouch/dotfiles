@@ -41,3 +41,7 @@ alias pacman-hist="awk '/installed/ { gsub(/^\[/, \"\", \$1); split(\$1, a, \"T\
 alias say='./sam'
 
 alias Trust='kjv Psalm 23' # dependent on kjv-apocrypha
+
+alias bashHelp='curl cheat.sh/bash'
+
+
