@@ -101,3 +101,10 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+
+# auto open tmux
+# should only open tmux if there are no current tmux sessions in use.
+if [[ ! $(tmux list-sessions) ]]; then
+  tmux -t $(whoami) || tmux new -s $(whoami)
+fi
