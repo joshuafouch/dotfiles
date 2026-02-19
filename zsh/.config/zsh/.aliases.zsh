@@ -11,7 +11,7 @@ alias mkdir='mkdir -p'
 alias zsh='zsh && exit'
 
 alias l='exa -lah'
-alias sl='cmatrix'
+alias sl='ls'
 alias cat='bat'	# dependent on bat tool
 alias v='nvim'	# dependent on neovim
 alias vim='nvim'  # dependent on neovim

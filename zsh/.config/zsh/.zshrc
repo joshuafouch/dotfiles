@@ -102,9 +102,11 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# go env
+export PATH=$PATH:/usr/local/go/bin
 
 # auto open tmux
-# should only open tmux if there are no current tmux sessions in use.
-if [[ ! $(tmux list-sessions) ]]; then
-  tmux -t $(whoami) || tmux new -s $(whoami)
+# Only start tmux if we are NOT already inside it
+if [ -z "$TMUX" ]; then
+    tmux attach 2>/dev/null || tmux new-session
 fi

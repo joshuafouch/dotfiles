@@ -13,3 +13,8 @@
   defaultBranch = main
 [credential]	
   helper = store
+[push]
+  autoSetupRemote = true
+
+[includeIf "gitdir:~/Backend-WebDev/"]
+    path = ~/.gitconfig-backend
