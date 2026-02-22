@@ -1,3 +1,5 @@
 # ignroe these stupid files because they keep changing and stuff
 
 hypr/.config/hypr/monitors.conf
+tmux/.config/tmux/plugins
+tmux/.config/tmux/resurrect

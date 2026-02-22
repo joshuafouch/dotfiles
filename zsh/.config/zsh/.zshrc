@@ -110,3 +110,5 @@ export PATH=$PATH:/usr/local/go/bin
 if [ -z "$TMUX" ]; then
     tmux attach 2>/dev/null || tmux new-session
 fi
+
+. "$HOME/.local/share/../bin/env"
