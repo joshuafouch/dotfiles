@@ -93,6 +93,7 @@ Since we commented out the VPN's internal DNS to avoid resolvconf errors, your l
 3. **Analyze Results**:
    - **Pass**: You only see servers labeled "Proton AG" or "M247".
    - **Fail (Leak)**: You see your Company Name or your ISP's name.
+4. Check [whatismyipaddress.com](https://whatismyipaddress.com/).
 
 **If you are leaking**: You should manually set a private DNS in your iwd or system settings (e.g., `1.1.1.1` for Cloudflare) to ensure your company cannot see your browsing history.
 
