@@ -114,3 +114,6 @@ export PATH=$PATH:/usr/local/go/bin
 
 
 . "$HOME/.local/share/../bin/env"
+
+# opencode
+export PATH=/home/joshuaf/.opencode/bin:$PATH
