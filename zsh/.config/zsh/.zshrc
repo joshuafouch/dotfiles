@@ -1,5 +1,12 @@
 # my zsh config
 
+
+# auto open tmux
+# Only start tmux if we are NOT already inside it
+if [ -z "$TMUX" ]; then
+    tmux attach 2>/dev/null || tmux new-session
+fi
+
 #pokemon-colorscripts -r -s --no-title
 
 # Enable Powerlevel10k instant prompt.
@@ -105,10 +112,5 @@ esac
 # go env
 export PATH=$PATH:/usr/local/go/bin
 
-# auto open tmux
-# Only start tmux if we are NOT already inside it
-if [ -z "$TMUX" ]; then
-    tmux attach 2>/dev/null || tmux new-session
-fi
 
 . "$HOME/.local/share/../bin/env"
