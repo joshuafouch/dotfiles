@@ -1,8 +1,8 @@
 return {
-  {
-    -- Detect tabstop and shiftwidth automatically
-    'tpope/vim-sleuth',
-  },
+  --  {
+  --    -- Detect tabstop and shiftwidth automatically
+  --    'tpope/vim-sleuth',
+  --  },
   {
     -- Powerful Git integration for Vim
     'tpope/vim-fugitive',
